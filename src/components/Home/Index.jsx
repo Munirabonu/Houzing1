@@ -1,9 +1,13 @@
-import React from 'react'
-import  { Container } from './style.js'
-export default function Generic() {
+import React from "react";
+import Filter from "../Filter";
+import { Container } from "./style";
+
+export const Home = () => {
   return (
     <Container>
-      <h1>Generic</h1>
+      <Filter />
     </Container>
-  )
-}
+  );
+};
+
+export default Home;

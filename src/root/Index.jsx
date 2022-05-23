@@ -1,23 +1,18 @@
-import React from 'react'
-import { Navigate, Route, Routes } from 'react-router-dom'
-import Navbar from '../components/Navbar/Index'
-import { navbar } from '../utils/navbar'
-import { Container } from './style'
+import React from "react";
+import { Navigate, Route, Routes } from "react-router-dom";
+import Navbar from "../components/Navbar";
+import { navbar } from "../utils/navbar";
 
-export default function Root() {
+export const Root = () => {
   return (
-    <>
-      <Routes>
-        <Route path='/' element={<Navigate to="/home" />} />
-        <Route element={<Navbar />}>
-          {navbar.map(({ Element, id, path }) =>{
-            return <Route key={id} path={path} element={Element}/>
-          }
-
-)}
-        </Route>
-
-      </Routes>
-    </>
-  )
-}
+    <Routes>
+      <Route element={<Navbar />}>
+        {navbar.map(({ path, Element, id, hidden }) => {
+          return !hidden && <Route key={id} path={path} element={Element} />;
+        })}
+        <Route path="/" element={<Navigate to={"/home"} />} />
+      </Route>
+      <Route path="*" element={<div>not found</div>} />
+    </Routes>
+  );
+};

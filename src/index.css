@@ -1,14 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
+
 body {
-  margin: 0;
-  font-family: "Fire Code", monospace;
-  background-color: white;
+  font-family: "Fira Code", monospace;
+  background: #ffffff;
 }
 
+/* hamma elementga ta'sir qiluvchi kodlar */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* umumiy style */
 :root {
   --primaryColor: #0d263b;
   --secondaryColor: #696969;
@@ -17,33 +21,51 @@ body {
   --width: 1440px;
 }
 
+/* barcha title larning umumiy style */
 .title {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
+  /* line-height: 36px; */
+  /* text-align: center; */
+  letter-spacing: -0.02em;
   color: #0d263b;
 }
 
-.descrption {
+/* barcha subtitle larning umumiy style */
+.subtitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  /* line-height: 28px; */
+  /* text-align: center; */
+  color: #0d263b;
+}
+
+/* barcha descriptionlarinign umumiy style */
+.description {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
+  /* line-height: 24px; */
   color: #696969;
 }
 
+/* center uchun style */
 .center {
   display: flex;
   justify-content: center;
 }
 
+/* textlarni bosib turgan holatda copy bo'lib ketishini oldini olish uchun */
 .nocopy {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
+  -webkit-touch-callout: none; /*iOS Safari*/
+  -webkit-user-select: none; /*Safari*/
+  -khtml-user-select: none; /*Konqueror HTMl*/
+  -moz-user-select: none; /*Old versions of Firefox*/
+  -ms-user-select: none; /*Internet Explorer/Edge*/
   user-select: none;
-
 }

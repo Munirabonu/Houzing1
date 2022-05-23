@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
-export const Container =styled.div`
-    /* display:flex; */
-`
+const Container = styled.div`
+  // display: flex;
+`;
+
+export { Container };
