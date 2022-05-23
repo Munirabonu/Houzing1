@@ -4,6 +4,7 @@ import { navbar } from '../../utils/navbar.js'
 import { activeStyle, Container, Logo, NavbarBody, NavbarWrapper, Wrapper } from './style.js'
 export default function Navbar() {
   const navigate=useNavigate();
+console.log(navbar);
 
   return (
     <Wrapper>
