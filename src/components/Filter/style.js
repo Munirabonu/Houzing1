@@ -6,10 +6,9 @@ import { ReactComponent as Search } from "../../assets/icons/search.svg";
 const Container = styled.div`
   display: flex;
   max-width: var(--width);
-  width: 100%;
-  padding: 0 130px;
+  width: 80%;
   gap: 20px;
-  margin: 10px 0;
+  margin: 10px auto;
 `;
 
 const Icon = styled.div`
@@ -41,7 +40,7 @@ Advanced.Title = styled.div`
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  fon-size: 16px;
+  font-size: 16px;
   line-height: 24px;
   color: #0d263b;
 `;

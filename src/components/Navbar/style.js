@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as logoIcon } from "../../assets/icons/logo.svg";
+import   { ReactComponent as logoIcon } from "../../assets/icons/logo.svg";
 
 const Wrapper = styled.div`
   display: flex;
@@ -15,9 +15,9 @@ const NavbarWrapper = styled.div`
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
   color: #ffffff;
-  padding: 0 130px;
 `;
 
 const Logo = styled.div`
