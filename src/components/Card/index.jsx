@@ -6,7 +6,7 @@ export const HouseCard = () => {
   return <Container>
     
     <Card>
-Card
+      Card
     </Card>
 
   </Container>;
