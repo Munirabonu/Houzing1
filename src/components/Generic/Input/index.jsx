@@ -15,11 +15,15 @@ export const Input = ({
   onChange,
   placeholder,
   defaultValue,
+  value,
+  name
 }) => {
   return (
     <Wrapper mr={mr} ml={ml} mb={mb} mt={mt}>
       <Icon>{children}</Icon>
       <Container
+      value={value}
+      name={name}
         defaultValue={defaultValue}
         onChange={onChange}
         placeholder={placeholder}
