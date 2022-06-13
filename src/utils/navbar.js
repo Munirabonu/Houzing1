@@ -3,6 +3,9 @@ import React from "react";
 import HomePage from "../pages/Home";
 import Generic from "../pages/Generic";
 import Propertiespage from "../pages/Properties";
+import Detalies from "../components/Detailes";
+import SignInPage from "../pages/SignIn";
+import SignUpPage from "../pages/SignUp";
 
 export const navbar = [
   {
@@ -24,6 +27,16 @@ export const navbar = [
     private: false,
   },
   {
+    id: '2-1',
+    title: "Properties",
+    path: "/properties/:id",
+    Element: <Detalies />,
+    search: "?",
+    hidden: true,
+    private: false,
+    param:true
+  },
+  {
     id: 3,
     title: "Contacts",
     path: "/contacts",
@@ -34,18 +47,19 @@ export const navbar = [
   },
   {
     id: 4,
-    title: "Login",
-    path: "/login",
-    Element: <Generic />,
+    title: "SignIn",
+    path: "/signin",
+    Element: <SignInPage />,
     search: "?",
     hidden: true,
     private: false,
+    param:true
   },
   {
     id: 5,
     title: "Sign Up",
-    path: "/singnup",
-    Element: <Generic />,
+    path: "/signup",
+    Element: <SignUpPage />,
     search: "?",
     hidden: true,
     private: false,

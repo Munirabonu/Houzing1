@@ -15,7 +15,7 @@ export const Navbar = () => {
   const navigate = useNavigate();
 
   const gotoLogin = () => {
-    navigate("/login");
+    navigate("/signin");
   };
   return (
     <Wrapper className="nocopy">
@@ -38,7 +38,7 @@ export const Navbar = () => {
           </NavbarBody>
           <Logo>
             <Button onClick={gotoLogin} width={"120px"}>
-              Login
+              Sign in
             </Button>
           </Logo>
         </NavbarWrapper>

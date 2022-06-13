@@ -1,10 +1,9 @@
 import React from "react";
 import { Card_item, Container, Icons, Img, Info, InfoWrapper, Price, User } from "./style";
 
-export const Card = ({ info, mr, ml, margin }) => {
+export const Card = ({ info, mr, ml, margin,onClick }) => {
   return (
-
-    <Card_item className="nocopy">
+    <Card_item className="nocopy" onClick={onClick}>
       <Img src={info?.attachments[0]?.imgPath || 'no img'} alt='house img' />
       <InfoWrapper>
         <User>
@@ -21,19 +20,19 @@ export const Card = ({ info, mr, ml, margin }) => {
         <Info.Detailes>
           <Icons.Wrapper>
             <Icons.Bed />
-            <Info.Text>{info?.houseDetailes.beds || 0}Beds</Info.Text>
+            <Info.Text>{info?.houseDetailes?.beds || 0}Beds</Info.Text>
           </Icons.Wrapper>
           <Icons.Wrapper>
             <Icons.Bed />
-            <Info.Text>{info?.houseDetailes.beds || 0}Beds</Info.Text>
+            <Info.Text>{info?.houseDetailes?.beds || 0}Beds</Info.Text>
           </Icons.Wrapper>
           <Icons.Wrapper>
             <Icons.Bed />
-            <Info.Text>{info?.houseDetailes.beds || 0}Beds</Info.Text>
+            <Info.Text>{info?.houseDetailes?.beds || 0}Beds</Info.Text>
           </Icons.Wrapper>
           <Icons.Wrapper>
             <Icons.Bed />
-            <Info.Text>{info?.houseDetailes.beds || 0}Beds</Info.Text>
+            <Info.Text>{info?.houseDetailes?.beds || 0}Beds</Info.Text>
           </Icons.Wrapper>
 
         </Info.Detailes>

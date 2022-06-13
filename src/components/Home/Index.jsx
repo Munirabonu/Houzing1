@@ -1,7 +1,8 @@
 import React from "react";
-import HouseCard from "../Card";
 import Carusel from "../Carusel";
+import Category from "../Category";
 import Filter from "../Filter";
+import Recommended from "../Recommended";
 import { Container } from "./style";
 
 export const Home = () => {
@@ -9,7 +10,8 @@ export const Home = () => {
     <Container>
       <Filter />
       <Carusel />
-      <HouseCard />
+      <Recommended />
+      <Category />
     </Container>
   );
 };
