@@ -1,18 +1,14 @@
 import React from "react";
 import { AndCheckbox, Container, Icon, Wrapper } from "./style";
 
-export const Input = ({
+export const Checkbox = ({
   children,
   mr,
   ml,
   mb,
   mt,
   pl,
-  onChange,
-  placeholder,
-  defaultValue,
-  value,
-  name
+  onChange
 }) => {
   return (
     <AndCheckbox
@@ -26,4 +22,4 @@ export const Input = ({
   );
 };
 
-export default Input;
+export default Checkbox;

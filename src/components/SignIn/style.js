@@ -42,7 +42,7 @@ const Input =styled.input`
   outline: none;
   border-bottom: 2px solid #E6E9EC;
   font-size: 14px;
-  margin-bottom: 10px;
+  margin-top: 10px;
 `
 const Link =styled.a`
   font-weight: 400;
@@ -57,9 +57,12 @@ const  Remember=styled.div`
   justify-content: space-between;
   align-items: center;
 `
+const Error=styled.p`
+  color: red;
+  font-size: 14px;
+`
 
 
 
 
-
-export { Container,Wrapper,Input,Remember,Link,Label,Title };
+export { Container,Wrapper,Input,Remember,Link,Label,Title,Error };

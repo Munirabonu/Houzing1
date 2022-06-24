@@ -3,7 +3,7 @@ import styled from "styled-components";
 import carousel1 from "../../assets/imgs/carousel1.png";
 import  {ReactComponent as arrow}  from '../../assets/icons/arrow.svg';
 const Container = styled.div`
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   position: relative;
   z-index: 1;

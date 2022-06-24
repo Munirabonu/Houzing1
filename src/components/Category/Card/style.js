@@ -11,15 +11,17 @@ position: relative;
 const Title = styled.div`
     position: absolute;
     top: 50%;
-    left: 40%;
     z-index: 1;
     font-family: 'Montserrat';
-font-style: normal;
-font-weight: 600;
-font-size: 18px;
-line-height: 28px;
-/* identical to box height, or 156% */
-color: #FFFFFF;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 
 `
 

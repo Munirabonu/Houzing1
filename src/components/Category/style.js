@@ -8,6 +8,7 @@ const Container =styled.div`
 const Wrapper =styled.div`
   display: flex;
   justify-content: center;
+  align-content: center;
   width: 100%;
 `
 const Cards =styled.div`

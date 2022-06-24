@@ -26,6 +26,7 @@ export const Properties = () => {
     ['getHouse'],
     () => {
       return fetch('https://houzing-app.herokuapp.com/api/v1/categories',{
+        method:'GET',
         headers:{
           Authorization:`Bearer ${localStorage.getItem('token')}`,
         },

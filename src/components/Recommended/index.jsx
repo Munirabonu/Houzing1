@@ -10,26 +10,24 @@ export const Recommended = () => {
 const slider=useRef()
 
   useQuery(
-    ['test'],
+    'test',
     () => {
       return fetch('https://houzing-app.herokuapp.com/api/v1/houses/list').then((res) => res.json())
     },
     {
       onSuccess: 
         (res)=>{
-          console.log(res);
           setData(res?.data,'set');
           let list =res?.data.map((res)=>
           res );
           console.log(list,'lis');
+          console.log(res,'category res');
           // <Card info={data} />
         }
-        
-      
     }
   )
 
-
+console.log(data,'data');
   const items = [
     <Card />,
     <Card />,
